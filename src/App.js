@@ -9,11 +9,7 @@ const terrainProvider = createWorldTerrain()
 const App = () => {
   return (
     <Viewer full terrainProvider={terrainProvider}>
-      <Entity
-        position={position}
-        point={pointGraphics}
-        onDefinitionChange={inspectCamera}
-      />
+      <Entity position={position} point={pointGraphics} />
       <Camera />
       <Scene />
       <Globe />
